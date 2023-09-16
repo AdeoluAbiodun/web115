@@ -1,0 +1,60 @@
+body {
+  background-color: coral;
+  animation: changeColor 240s infinite;
+}
+
+@keyframes changeColor {
+  0% { background-color: coral; }
+  25% { background-color: skyblue; }
+  50% { background-color: lightgreen; }
+  75% { background-color: pink; }
+  100% { background-color: yellow; }
+}
+
+main {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+blockquote {
+  background-color: #fff8dc;
+  border-left: 4px solid #ffa500;
+  padding: 10px;
+  margin: 0;
+}
+
+main pre {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+main pre code {
+  color: green;
+  font-style: italic;
+}
+
+main pre code.error {
+  color: red;
+  font-weight: bold;
+}
+
+main pre code.function {
+  color: blue;
+}
+
+.custom-list-B {
+  list-style: none;
+}
+
+.toc-custom li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.toc-custom li:not(:last-child):after {
+    content: "|";
+    margin-left: 10px;
+    color: coral;

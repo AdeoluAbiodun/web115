@@ -1,0 +1,80 @@
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: coral;
+    animation: changeColor 180s infinite;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes changeColor {
+    0% { background-color: coral; }
+    25% { background-color: skyblue; }
+    50% { background-color: lightgreen; }
+    75% { background-color: pink; }
+    100% { background-color: yellow; }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+footer {
+    background-color:  #ffffff;
+    color: black;
+    text-align: center;
+    padding: auto;
+    text: black;
+   }
+
+footer a {
+    text-decoration: none;
+    background-color:  #ffffff;
+    padding: auto;/**margin: 0 10px;**/
+    text-align: center;
+    text: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-align: center;
+}
+
+/**.single-line {
+    white-space: nowrap;
+} **/
+
+@media (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for screens between 769px and 1024px wide */
+}
+
+@media (min-width: 1025px) {
+  /* Styles for screens wider than 1024px */
+}
