@@ -69,6 +69,11 @@ figure {
   margin: auto;
 }
 
+figcaption {
+  margin: auto;
+  padding: auto;
+}
+
 .sub-list {
   list-style-type: square;
   margin-left: 20px;
