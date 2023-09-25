@@ -69,9 +69,7 @@ figure, .resized-image {
   text-align: center;
   margin: auto;
 }
-figcaption {
-  text-align: center
-}
+
 .sub-list {
   list-style-type: square;
   margin-left: 20px;
