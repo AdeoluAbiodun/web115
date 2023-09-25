@@ -45,7 +45,6 @@ li {
   bottom: 1px;
 }
 
-
 nav {
   color: rgb(0, 128, 128);
   padding: 10px;
@@ -59,7 +58,7 @@ nav {
   bottom: 1px;
 }
 
-figure, .resized-image {
+figure {
   width: 300px;
   height: auto;
   padding: auto;
