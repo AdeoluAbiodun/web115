@@ -5,7 +5,14 @@
 body {
   background-color: coral;
   animation: changeColor 210s infinite;
+  color: navy;
   font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+header, footer {
+  text-align: center;
+  background-color: white;
 }
 
 @keyframes changeColor {
@@ -18,7 +25,6 @@ body {
 
 h1 {
   color: #F4C430;
-  text-align: center;
 }
 
 h2 {
@@ -28,48 +34,17 @@ h2 {
 }
 
 p {
-  color: #44362F;
+  color: navy;
 }
 
 li {
   list-style: disc;
   margin-left: 20px;
-  color: #44362F;
+  color: navy;
   top: 2px;
   bottom: 1px;
 }
 
-.custom-list-B a {
-  text-decoration: none;
-  color: rgb(0, 128, 128);
-  font-weight: bold;
-  text-align: center;
-  top: 2px;
-  bottom: 1px;
-}
-
-.custom-list-B a:hover {
-  color: #A81C07;
-  font-weight: bold;
-  text-align: center;
-  top: 2px;
-  bottom: 1px;
-}
-
-.custom-list-B {
-  text-align: center;
-  padding-left: auto;
-  padding-right: auto; 
-  color: rgb(0, 128, 128)
-  font-weight: bold;
-}
-
-footer {
-  text-align: center;
-  background-color: white;
-  padding: auto;
-  clear: both;
-}
 
 nav {
   color: rgb(0, 128, 128);
@@ -84,21 +59,15 @@ nav {
   bottom: 1px;
 }
 
-.resized-image {
+figure, .resized-image {
   width: 300px;
   height: auto;
-  margin: auto;
+  padding: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-figure {
-  width: 300px;
-  height: auto;
-  display: flex;
-  justify-content: center;
+  margin: auto;
 }
 figcaption {
   text-align: center
