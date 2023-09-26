@@ -58,7 +58,7 @@ nav {
   bottom: 1px;
 }
 
-figure {
+figure, newly-update {
   width: 300px;
   height: auto;
   padding: auto;
