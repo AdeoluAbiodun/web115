@@ -63,7 +63,7 @@ figure {
   height: auto;
   padding: auto;
   display: flex;
-  flex-direction: column; /* Stack the image and caption vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
