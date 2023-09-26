@@ -58,22 +58,19 @@ nav {
   bottom: 1px;
 }
 
-figure, newly-update {
-  width: 300px;
+figure {
+  width: 260px;
   height: auto;
   padding: auto;
   display: flex;
+  flex-direction: column; /* Stack the image and caption vertically */
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: auto;
 }
 
-figcaption {
-  margin: auto;
-  padding: auto;
-  align-items: center;
-}
+
 
 .sub-list {
   list-style-type: square;
