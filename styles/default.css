@@ -72,6 +72,7 @@ figure {
 figcaption {
   margin: auto;
   padding: auto;
+  align-items: center;
 }
 
 .sub-list {
