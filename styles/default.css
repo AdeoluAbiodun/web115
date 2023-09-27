@@ -5,7 +5,7 @@
 body {
   background-color: coral;
   animation: changeColor 210s infinite;
-  color: navy;
+  color: darkblue;
   font-family: Verdana, Arial, Helvetica, sans-serif;
 
 }
@@ -34,13 +34,13 @@ h2 {
 }
 
 p {
-  color: navy;
+  color: darkblue;
 }
 
 li {
   list-style: disc;
   margin-left: 20px;
-  color: navy;
+  color: darkblue;
   top: 2px;
   bottom: 1px;
 }
@@ -69,7 +69,6 @@ figure {
   text-align: center;
   margin: auto;
 }
-
 
 
 .sub-list {
