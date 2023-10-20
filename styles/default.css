@@ -7,7 +7,6 @@ body {
   animation: changeColor 210s infinite;
   color: darkblue;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-
 }
 
 header, footer {
@@ -41,8 +40,6 @@ li {
   list-style: disc;
   margin-left: 20px;
   color: darkblue;
-  top: 2px;
-  bottom: 1px;
 }
 
 nav {
@@ -53,15 +50,11 @@ nav {
   margin: 0 10px;
   font-size: 15px;
   word-spacing: 0.3em;
-  position: relative;
-  top: 2px;
-  bottom: 1px;
 }
 
 figure {
   width: 260px;
   height: auto;
-  padding: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +62,6 @@ figure {
   text-align: center;
   margin: auto;
 }
-
 
 .sub-list {
   list-style-type: square;
@@ -104,11 +96,8 @@ figure {
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   color: white;
-  /** text: #141E30;**/
   font-size: 22px;
   padding-right: 10px;
-  top: 1px;
-  right: 1px;
 }
 
 .toc-image {
