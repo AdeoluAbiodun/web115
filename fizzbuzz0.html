@@ -33,20 +33,17 @@
         <div id="fizzbuzz-results"></div>
     </main>
     <script>
-            function showAlert() {
-              let firstName = document.getElementById("first-name").value;
-              let middleInitial = document.getElementById("middle-initial").value;
-              let lastName = document.getElementById("last-name").value;
-            
-              middleInitial = middleInitial.slice(0, 1);
-            
-              let message = "Welcome, " + firstName + " " + middleInitial + "." + " " + lastName + "!";
-              alert(message);
-}
+        function showAlert() {
+            let firstName = document.getElementById("first-name").value;
+            let middleInitial = document.getElementById("middle-initial").value;
+            let lastName = document.getElementById("last-name").value;
+            let message = "Welcome, " + firstName + " " + middleInitial + "." + " " + lastName + "!";
+            alert(message);
 
             // Ask the user how high they want to count
             let count = parseInt(prompt("How high do you want to count, " + firstName + "?"));
             
+            // Clear previous results
             document.getElementById('fizzbuzz-results').innerHTML = '';
 
             // Perform the count and indicate whether each number is even or odd
