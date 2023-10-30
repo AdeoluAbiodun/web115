@@ -19,7 +19,7 @@
         </nav>
     </header>
     <main>
-        <h2>Fizz Buzz</h2>
+        <h2>Fizz Buzz 1</h2>
         <h3 class="greetings">Welcome to Angelic Angelfish Fizz Buzz</h3>
         <form method="post" onsubmit="showAlert(); return false;">
             <fieldset>
@@ -39,9 +39,6 @@
         let lastName = document.getElementById("last-name").value;
         let message = "Welcome, " + firstName + " " + middleInitial + "." + " " + lastName + "!";
         alert(message);
-
-        // Ask the user how high they want to count
-        let count = parseInt(prompt("How high do you want to count, " + firstName + "?"));
         
         // Clear previous results
         document.getElementById('fizzbuzz-results').innerHTML = '';
@@ -49,7 +46,7 @@
         // Perform the count and indicate whether each number is even or odd
         for (let i = 1; i <= count; i++) {
             const isEven = i % 2 === 0;
-            const evenOrOdd = isEven ? "Rockstar! You've got yourself an even number." : "Rockstar! You've got yourself an old number.";
+            const evenOrOdd = isEven ? "Rockstar!" : "Writer.";
             document.getElementById('fizzbuzz-results').innerHTML += `<p>${i}. ${evenOrOdd}</p>`;
         }
     }
