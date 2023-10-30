@@ -37,14 +37,13 @@
         let firstName = document.getElementById("first-name").value;
         let middleInitial = document.getElementById("middle-initial").value;
         let lastName = document.getElementById("last-name").value;
-        let message = "Welcome, " + firstName + " " + middleInitial + "." + " " + lastName + "!";
-        alert(message);
-        
+        alert("Welcome, " + firstName + " " + middleInitial + "." + " " + lastName + "!");
+
         // Clear previous results
         document.getElementById('fizzbuzz-results').innerHTML = '';
 
-        // Perform the count and indicate whether each number is even or odd
-        for (let i = 1; i <= count; i++) {
+        // Perform the count from 1 to 140 and indicate whether each number is even or odd
+        for (let i = 1; i <= 140; i++) {
             const isEven = i % 2 === 0;
             const evenOrOdd = isEven ? "Rockstar!" : "Writer.";
             document.getElementById('fizzbuzz-results').innerHTML += `<p>${i}. ${evenOrOdd}</p>`;
