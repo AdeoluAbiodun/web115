@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adeolu Abiodun's Angelic Angelfish | WEB115 | Fizz Buzz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/default.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Adeolu Abiodun's Angelic Angelfish | Fizz Buzz 1</h1>
+        <nav>
+            <a href="index.html">Home</a>&nbsp;||
+            <a href="introduction.html">Introduction</a>&nbsp;||
+            <a href="contract.html">Contract</a>&nbsp;||
+            <a href="brand.html">Brand</a>&nbsp;||
+            <a href="fizzbuzz0.html">Fizz Buzz 0</a>&nbsp;||
+            <a href="fizzbuzz1.html">Fizz Buzz 1</a>
+        </nav>
+         <nav>
+            <a href="fizzbuzz0.html">Fizz Buzz 0</a>&nbsp;||
+            <a href="fizzbuzz1.html">Fizz Buzz 1</a>
+            <a href="fizzbuzz1.html">Fizz Buzz 2</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Fizz Buzz 1</h2>
+        <h3 class="greetings">Welcome to Angelic Angelfish Fizz Buzz</h3>
+        <form method="post" onsubmit="showAlert(); return false;">
+            <fieldset>
+                <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" placeholder="Enter Your First Name" required /></label>
+                <label for="middle-initial">Middle Name Initial: <input id="middle-initial" name="middle-initial" type="text" placeholder="Enter Your Middle Name Initial" required /></label>
+                <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" placeholder="Enter Your Last Name" required /></label>
+            </fieldset>
+            <input type="submit" value="Clear" />
+            <input type="submit" value="Submit" />
+        </form>
+        <div id="fizzbuzz-results"></div>
+    </main>
+  
+  <script>
+    function isEvenlyDivisible(num1, num2) {
+        return num1 % num2 === 0;
+    }
+
+    function showAlert() {
+        let firstName = document.getElementById("first-name").value;
+        let middleInitial = document.getElementById("middle-initial").value;
+        let lastName = document.getElementById("last-name").value;
+        alert("Welcome, " + firstName + " " + middleInitial + "." + " " + lastName + "!");
+
+        // Clear previous results
+        document.getElementById('fizzbuzz-results').innerHTML = '';
+
+        // Perform the count from 1 to 140 and indicate whether each number is evenly divisible
+        for (let i = 1; i <= 140; i++) {
+            const isEvenlyDivisibleBy3 = isEvenlyDivisible(i, 3);
+            const isEvenlyDivisibleBy5 = isEvenlyDivisible(i, 5);
+            const result = isEvenlyDivisibleBy3 && isEvenlyDivisibleBy5 ? "Evenly Divisible by Both" : "Not Evenly Divisible by Both";
+            document.getElementById('fizzbuzz-results').innerHTML += `<p>${i}. ${result}</p>`;
+        }
+    }
+</script>
+    <footer>
+        <nav>
+            <a href="https://github.com/adeoluabiodun/">GitHub</a>&nbsp;||
+            <a href="https://adeoluabiodun.github.io/">GitHub.io</a>&nbsp;||
+            <a href="index.html">WEB115.io</a>&nbsp;||&nbsp;
+            <a href="https://www.codecademy.com/profiles/AdeoluAbiodun">Codecademy</a>&nbsp;||
+            <a href="https://www.freecodecamp.org/AdeoluAbiodun">FreeCodeCamp</a> &nbsp;||
+            <a href="https://jsfiddle.net/user/AdeoluAbiodun/">JSFiddle</a>&nbsp;||
+            <a href="https://www.linkedin.com/in/adeolu-abiodun-42a858279/">LinkedIn</a>
+        </nav>
+        <p>Page built by <em>Adeolu Abiodun</em> ||&nbsp;
+            <a href="https://validator.w3.org/nu/?doc=https://adeoluabiodun.github.io/web115/fizzbuzz0.html">HTML Validation</a>&nbsp;||
+            <a href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fadeoluabiodun.github.io%2Fweb115%2Fstyles%2Fdefault.css&usermedium=all&vextwarning=&warning=1" target="_blank">CSS Validation</a>
+        </p>
+    </footer>
+</body>
+</html>
