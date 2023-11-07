@@ -22,7 +22,7 @@
         </nav>
     </header>
     <main>
-        <h2>Fizz Buzz</h2>
+        <h2>Fizz Buzz 0</h2>
         <h3 class="greetings">Welcome to Angelic Angelfish Fizz Buzz</h3>
         <form method="post" onsubmit="showAlert(); return false;">
             <fieldset>
@@ -56,6 +56,11 @@
                 document.getElementById('fizzbuzz-results').innerHTML += `<p>${i} is ${evenOrOdd}.</p>`;
             }
         }
+        function clearForm() {
+        document.getElementById("first-name").value = "";
+        document.getElementById("middle-initial").value = "";
+        document.getElementById("last-name").value = "";
+    }
     </script>
     <footer>
         <nav>
