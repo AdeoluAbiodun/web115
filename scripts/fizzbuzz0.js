@@ -33,11 +33,12 @@ function showAlert() {
         document.getElementById('fizzbuzz-results').innerHTML += `<p>${i} is ${evenOrOdd}.</p>`;
     }
 }
-
 function clearForm() {
     // Clear the form fields
     document.getElementById("first-name").value = "";
     document.getElementById("middle-initial").value = "";
     document.getElementById("last-name").value = "";
+
+    // Clear previous results
     document.getElementById('fizzbuzz-results').innerHTML = "";
 }
