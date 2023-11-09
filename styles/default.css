@@ -117,3 +117,8 @@ figure {
   align-items: center;
   border: solid white 10px;
 }
+
+label {
+  display: block;
+  margin: auto;
+}
