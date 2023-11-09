@@ -3,7 +3,9 @@ document.getElementById("firstname").value = "Adeolu";
 document.getElementById("lastname").value = "Abiodun";
 document.getElementById("email").value = "aa@aa.com";
 
-function submitForm() {
+document.getElementById("user-info-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
     // Get the form values
     var firstname = document.getElementById("firstname").value;
     var lastname = document.getElementById("lastname").value;
@@ -11,15 +13,13 @@ function submitForm() {
 
     // Display the form values
     var output = document.getElementById("output");
-    output.innerHTML = "First Name: " + firstname + "<br>" +
-                        "Last Name: " + lastname + "<br>" +
-                        "Email: " + email;
-
-    return false; // Prevent the form from submitting
-}
+    output.innerHTML = "<p>First Name: " + firstname + "</p>" +
+                       "<p>Last Name: " + lastname + "</p>" +
+                       "<p>Email: " + email + "</p>";
+});
 
 function clearForm() {
-    // Clear the form fields
+    // Clear the form fields and output
     document.getElementById("firstname").value = "";
     document.getElementById("lastname").value = "";
     document.getElementById("email").value = "";
