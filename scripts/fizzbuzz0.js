@@ -3,7 +3,7 @@ function showResults() {
     let middleInitial = document.getElementById("middle-initial").value;
     let lastName = document.getElementById("last-name").value;
 
-    // Check if any of the fields are empty
+    // Check if any field is empty
     if (!firstName || !lastName) {
         alert("Please enter both first and last names.");
         return;
@@ -21,7 +21,7 @@ function showResults() {
         return;
     }
 
-    // Clear previous results
+    // Clear results
     document.getElementById('fizzbuzz-results').innerHTML = '';
 
     // Perform the count and indicate whether each number is even or odd
@@ -30,7 +30,7 @@ function showResults() {
         const evenOrOdd = isEven ? "Hocus Pocus - the number is even" : "Zippity Zappity - the number is odd";
         document.getElementById('fizzbuzz-results').innerHTML += `<p>${i} is ${evenOrOdd}.</p>`;
     }
-    // Removed the return statement from here
+
 }
 
 function clearForm() {
