@@ -3,12 +3,11 @@ function showAlert() {
     let middleInitial = document.getElementById("middle-initial").value;
     let lastName = document.getElementById("last-name").value;
 
-    /* Check if any of the fields are empty
+    // Check if any of the fields are empty
     if (!firstName || !lastName) {
         alert("Please enter both first and last names.");
         return;
     }
-    */
 
     let message = "Welcome, " + firstName + " " + middleInitial + "." + " " + lastName + "!";
     alert(message);
@@ -16,12 +15,11 @@ function showAlert() {
     // Ask the user how high they want to count
     let count = parseInt(prompt("How high do you want to count, " + firstName + "?"));
 
-    /*// Check if the count is a valid number
+    // Check if the count is a valid number
     if (isNaN(count)) {
         alert("Please enter a valid number for counting.");
         return;
     }
-    */
 
     // Clear previous results
     document.getElementById('fizzbuzz-results').innerHTML = '';
@@ -32,7 +30,10 @@ function showAlert() {
         const evenOrOdd = isEven ? "Hocus Pocus - the number is even" : "Zippity Zappity - the number is odd";
         document.getElementById('fizzbuzz-results').innerHTML += `<p>${i} is ${evenOrOdd}.</p>`;
     }
+
+    // Removed the return statement from here
 }
+
 function clearForm() {
     // Clear the form fields
     document.getElementById("first-name").value = "";
