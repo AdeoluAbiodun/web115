@@ -1,4 +1,4 @@
-function showAlert() {
+function showResults() {
     let firstName = document.getElementById("first-name").value;
     let middleInitial = document.getElementById("middle-initial").value;
     let lastName = document.getElementById("last-name").value;
@@ -30,7 +30,6 @@ function showAlert() {
         const evenOrOdd = isEven ? "Hocus Pocus - the number is even" : "Zippity Zappity - the number is odd";
         document.getElementById('fizzbuzz-results').innerHTML += `<p>${i} is ${evenOrOdd}.</p>`;
     }
-
     // Removed the return statement from here
 }
 
