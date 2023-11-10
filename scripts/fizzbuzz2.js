@@ -18,8 +18,13 @@
             document.getElementById('fizzbuzz-results').innerHTML += `<p>${i}. ${result}</p>`;
         }
     } 
-      function clearForm() {
+    function clearForm() {
+        // Clear the form fields
         document.getElementById("first-name").value = "";
         document.getElementById("middle-initial").value = "";
         document.getElementById("last-name").value = "";
+    
+        // Clear previous results
+        document.getElementById('fizzbuzz-results').innerHTML = "";
     }
+
