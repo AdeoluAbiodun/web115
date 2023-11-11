@@ -24,17 +24,6 @@ header, footer {
 
 h1 {
   color: #F4C430;
-  border-bottom-width: 25px;
-  border-bottom-style: dashed;
-  animation: changeColor 210s infinite;
-}
-
-@keyframes changeColor {
-  0% { border-bottom-color: coral; }
-  25% { border-bottom-color: skyblue; }
-  50% { border-bottom-color: lightgreen; }
-  75% { border-bottom-color: pink; }
-  100% { border-bottom-color: yellow; }
 }
 
 h2 {
