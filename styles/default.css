@@ -22,7 +22,8 @@ header, footer {
   100% { background-color: yellow; }
 }
 
-title {
+h1 {
+  color: #F4C430;
   border-bottom-width: 25px;
   border-bottom-style: dashed;
   animation: changeColor 210s infinite;
@@ -34,10 +35,6 @@ title {
   50% { border-bottom-color: lightgreen; }
   75% { border-bottom-color: pink; }
   100% { border-bottom-color: yellow; }
-}
-
-h1 {
-  color: #F4C430;
 }
 
 h2 {
