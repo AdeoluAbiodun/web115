@@ -28,7 +28,7 @@
         <form method="get" onsubmit="showAlert(); return false;">
             <fieldset>
                 <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" placeholder="Enter Your First Name" required /></label>
-                <label for="middle-initial">Middle Name Initial: <input id="middle-initial" name="middle-initial" type="text" placeholder="Enter Your Middle Name Initial" required /></label>
+                <label for="middle-initial">Middle Name Initial: <input id="middle-initial" name="middle-initial" type="text" placeholder="Enter Your Middle Name Initial" maxlength="1" /></label>
                 <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" placeholder="Enter Your Last Name" required /></label>
             </fieldset>
             <input type="submit" value="Clear" onclick="clearForm()" />
