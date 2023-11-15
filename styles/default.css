@@ -5,13 +5,13 @@
 body {
   background-color: coral;
   animation: changeColor 210s infinite;
-  color: darkblue;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #708D81;
+  font-family: Lora, Helvetica, sans-serif;
 }
 
 header, footer {
   text-align: center;
-  background-color: white;
+  background-color: #EAEAEA;
 }
 
 @keyframes changeColor {
@@ -23,27 +23,29 @@ header, footer {
 }
 
 h1 {
-  color: #F4C430;
+  color: #8D0801;
+  font-family: Montserrat, Roboto-Slab;
 }
 
 h2 {
   font-size: 28px;
-  color: #FFC40C;
+  color: #BF0603;
   text-align: center;
+  font-family: Lora, sans-serif;
 }
 
 p {
-  color: darkblue;
+  color: #708D81;
 }
 
 li {
   list-style: disc;
   margin-left: 20px;
-  color: darkblue;
+  color: #708D81;
 }
 
 nav {
-  color: rgb(0, 128, 128);
+  color: #BF0603;
   padding: 10px;
   text-align: center;
   font-weight: 800;
@@ -95,7 +97,7 @@ figure {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  color: white;
+  color: #BF0603;
   font-size: 22px;
   padding-right: 10px;
 }
