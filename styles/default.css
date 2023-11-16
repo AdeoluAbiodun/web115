@@ -54,6 +54,10 @@ nav {
   word-spacing: 0.3em;
 }
 
+a:active {
+    color: #92140C;
+}
+
 figure {
   width: 260px;
   height: auto;
