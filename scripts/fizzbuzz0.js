@@ -44,3 +44,19 @@ function clearForm() {
     // Clear previous results
     document.getElementById('fizzbuzz-results').innerHTML = "";
 }
+
+//Dynamic syntax
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('fizzBuzz0').addEventListener('click', () => {
+        updateHeader("Fizz Buzz 0");
+    });
+
+    document.getElementById('fizzBuzz1').addEventListener('click', () => {
+        updateHeader("Fizz Buzz 1");
+    });
+
+    document.getElementById('fizzBuzz2').addEventListener('click', () => {
+        updateHeader("Fizz Buzz 2");
+    });
+});
