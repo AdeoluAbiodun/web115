@@ -1,3 +1,40 @@
+function updateHeader(headerTitle) {
+    // Update the header title based on the current page
+    document.querySelector('header h1').textContent = `Adeolu Abiodun's Angelic Angelfish | ${headerTitle}`;
+}
+
+function injectNavLinks() {
+    // Define the common navigation links
+    const navLinksHTML = `
+        <nav>
+            <a href="index.html">Home</a>&nbsp;||
+            <a href="introduction.html">Introduction</a>&nbsp;||
+            <a href="contract.html">Contract</a>&nbsp;||
+            <a href="brand.html">Brand</a>&nbsp;||
+            <a href="fizzbuzz0.html">Fizz Buzz 0</a>&nbsp;||
+            <a href="fizzbuzz1.html">Fizz Buzz 1</a>&nbsp;||
+            <a href="fizzbuzz2.html">Fizz Buzz 2</a>
+        </nav>
+    `;
+
+    // Inject the navigation links into the header
+    document.querySelector('header').insertAdjacentHTML('beforeend', navLinksHTML);
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Inject navigation links on page load
+    injectNavLinks();
+
+    // Add event listeners for dynamic header update
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', (event) => {
+            const pageName = link.textContent;
+            updateHeader(pageName);
+        });
+    });
+});
+
+
 function showAlert() {
         let firstName = document.getElementById("first-name").value;
         let middleInitial = document.getElementById("middle-initial").value;
