@@ -45,7 +45,28 @@ function clearForm() {
     document.getElementById('fizzbuzz-results').innerHTML = "";
 }
 
-//Dynamic syntax
+function updateHeader(headerText) {
+    document.getElementById('main-header').innerText = 'Adeolu Abiodun\'s Angelic Angelfish | ' + headerText;
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('fizzBuzz0').addEventListener('click', (e) => {
+        e.preventDefault();
+        updateHeader("Fizz Buzz 0");
+    });
+
+    document.getElementById('fizzBuzz1').addEventListener('click', (e) => {
+        e.preventDefault();
+        updateHeader("Fizz Buzz 1");
+    });
+
+    document.getElementById('fizzBuzz2').addEventListener('click', (e) => {
+        e.preventDefault();
+        updateHeader("Fizz Buzz 2");
+    });
+});
+
+/* Dynamic syntax
 
 document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('fizzBuzz0').addEventListener('click', () => {
@@ -60,3 +81,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         updateHeader("Fizz Buzz 2");
     });
 });
+*/
