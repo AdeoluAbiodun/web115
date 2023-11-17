@@ -3,16 +3,22 @@ function updateHeader(headerTitle) {
 }
 
 function injectNavLinks() {
-    // ... (same as before)
+    // Define the common navigation links
+    const navLinksHTML = `
+        <a href="index.html">Home</a>&nbsp;||
+        <a href="introduction.html">Introduction</a>&nbsp;||
+        <a href="contract.html">Contract</a>&nbsp;||
+        <a href="brand.html">Brand</a>&nbsp;||
+        <a id="fizzBuzz0" href="fizzbuzz0.html">Fizz Buzz 0</a>&nbsp;||
+        <a id="fizzBuzz1" href="fizzbuzz1.html">Fizz Buzz 1</a>&nbsp;||
+        <a id="fizzBuzz2" href="fizzbuzz2.html">Fizz Buzz 2</a>
+    `;
+    // Inject the navigation links
     document.getElementById('dynamic-nav').innerHTML = navLinksHTML;
-
-    // Attach event listeners after injecting navigation links
-    document.getElementById('fizzBuzz0').addEventListener('click', () => updateHeader("Fizz Buzz 0"));
-    document.getElementById('fizzBuzz1').addEventListener('click', () => updateHeader("Fizz Buzz 1"));
-    document.getElementById('fizzBuzz2').addEventListener('click', () => updateHeader("Fizz Buzz 2"));
 }
 
 document.addEventListener('DOMContentLoaded', injectNavLinks);
+
 
 function showAlert() {
         let firstName = document.getElementById("first-name").value;
