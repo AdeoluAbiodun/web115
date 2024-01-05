@@ -14,7 +14,7 @@ body {
   background-color: coral;
   animation: changeColor 100s infinite;
   font-family: 'Baskervville', serif;
-  color: linen;
+  color: gray;
 }
 /*
 body {
