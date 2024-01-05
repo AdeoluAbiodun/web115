@@ -1,6 +1,6 @@
 body {
     background-color: coral;
-    animation: changeColor 180s infinite;
+    animation: changeColor 100s infinite;
     color: #3C1518;
     font-family: Lora, Helvetica, sans-serif;
     margin: 0;
