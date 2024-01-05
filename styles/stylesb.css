@@ -10,19 +10,18 @@ html {
   font-size: 62.5%;
 }
 
-body {
+/*body {
   background-color: coral;
   animation: changeColor 100s infinite;
   font-family: 'Baskervville', serif;
   color: gray;
 }
-/*
+*/
 body {
   font-family: 'Baskervville', serif;
   color: linen;
   background-color: rgb(20, 30, 40);
 }
-*/
 
 h1 {
   font-family: 'Anton', sans-serif;
