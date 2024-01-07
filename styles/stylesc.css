@@ -48,6 +48,7 @@
   transform-origin: 50% 0%;
   animation: cabins 10s ease-in-out infinite;
   color: white;
+  font-weight: bold;
 }
 
 .cabin:nth-of-type(1) {
